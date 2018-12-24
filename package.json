@@ -1,0 +1,28 @@
+{
+  "name": "@datatext/datatext-migrations",
+  "version": "0.0.1",
+  "description": "PostgresQL Migrations",
+  "repository": "https://github.com/datatext/datatext-migrations",
+  "author": "Jerome Velociter <jerome@velociter.fr>",
+  "license": "MPL-2.0",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "unit": "jest",
+    "test": "yarn integration-test",
+    "integration-test": "jest -c jest.config.integration.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/pg": "^7.4.11",
+    "jest": "^23.6.0",
+    "jest-circus": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "pg": "^7.7.1"
+  }
+}
